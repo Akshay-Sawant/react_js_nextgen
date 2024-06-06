@@ -1,0 +1,34 @@
+/* src/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  .logo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
