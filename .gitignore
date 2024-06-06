@@ -1,23 +1,86 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Dependencies
+node_modules/
 
-# testing
-/coverage
+# Build directories
+build/
+dist/
 
-# production
-/build
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# misc
-.DS_Store
+# Environment variables
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Editor directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+coverage/
+
+# Miscellaneous
+*.log
+*.lock
+.pnp
+.pnp.js
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Expo files
+.expo
+.expo-shared
+
+# SvelteKit build / generate output
+.svelte-kit
+
+# Generated API documentation
+site/
+
+# Miscellaneous
+*.tgz
+*.lock-wscript
+.cache/
+*.log
+*.gz
+*.pyc
+*.pyo
+*.pyd
