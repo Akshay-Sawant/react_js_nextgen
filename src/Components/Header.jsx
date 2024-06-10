@@ -5,7 +5,10 @@ import logo from '../Common/Images/logo.jpg'
 const Navbar = styled.nav`
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 15px 0;
+  img{
+    
+  }
 `
 
 const Header = () => {

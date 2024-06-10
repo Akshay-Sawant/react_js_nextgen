@@ -27,66 +27,15 @@ const Wrapper = styled.div`
     font-weight: 500;
     font-size: 16px;
   }
-
-  .rt-th{
-    background-color: #176bb3;
-    color: #fff;
-  }
-  
-  .rt-thead .rt-th{
-    padding: 15px 0px;
-    font-weight: 400;
-  }
-
-  .-even{
-    background-color: #EFF2F8;
-  }
 `
-
-// const Para = styled.p`
-//   margin-bottom: 0.5rem;
-// `
-
-// const CreditsDiv = styled.div`
-//   padding: 0px 15px;
-//   a{
-//     margin-top: auto;
-//     color: #e99d45;
-//     font-weight: bold;
-//     font-size: 15px;
-//     :hover{
-//       color: #e99d45;
-//     }
-//     img{
-//       margin-left: 5px;
-//     }
-//   }
-// `
-
-// const Credits = styled.div`
-//   display: flex;
-//   width: 100%;
-//   p{
-//     color: #757575
-//   }
-//   /* margin: auto; */
-//   text-align: left;
-//   border-right: 1px solid #e5e5e5;
-//   &:first-child{
-//     border-left: 1px solid #e5e5e5;
-//   }
-// `
-// const Digits = styled.div`
-  
-//   font-weight: bold;
-//   font-size: 25px;
-// `
 
 const ActionSection = styled.div`
    /* border: 1px solid rgba(0, 0, 0, 0.1); */
    /* border-bottom: 0; */
    box-sizing: border-box;
    padding: 10px;
+   border: 1px solid #e5e5e5;
+   margin-top: 10px;
 `
 
 const Dashboard = () => {
@@ -119,40 +68,13 @@ const Dashboard = () => {
     <>
       <Header />
       <Wrapper>
-        <h2>Dashboard</h2>
-        {/* <section style={{ height: '100px', display: 'flex', borderTop: "1px solid #e5e5e5" }}>
-          <Credits>
-            <CreditsDiv>
-              <Para>SKUs</Para>
-              <Digits>{commaNumber(dashboardCredits['total-used-credits'] || 0)}</Digits>
-            </CreditsDiv>
-          </Credits>
-          <Credits>
-            <CreditsDiv>
-              <Para>Categories</Para>
-              <Digits>{commaNumber(dashboardCredits['total-available-credits'] || 0)}</Digits>
-            </CreditsDiv>
-          </Credits>
-          <Credits>
-            <CreditsDiv>
-              <Para>Defined Data Sheets</Para>
-              <Digits>{commaNumber(dashboardCredits['total-labs-credits'] || 0)}</Digits>
-            </CreditsDiv>
-          </Credits>
-          <Credits>
-            <CreditsDiv>
-              <Para>Un-defined Data Sheets</Para>
-              <Digits>{commaNumber(dashboardCredits['total-active-client'] || 0)}</Digits>
-            </CreditsDiv>
-          </Credits>
-        </section> */}
         <ActionSection>
           <span id="file-chosen">{chosenFile ? chosenFile : "No files chosen"}</span>
           <label htmlFor="file-upload" className="custom-file-upload">
             Browse Files
           </label>
           <input id="file-upload" type="file" onChange={handleFileChange} />
-          <button className='custom-file-upload' onClick={processData}>Process Data</button>
+          <button className='custom-file-upload' onClick={processData}>Show More</button>
         </ActionSection>
       </Wrapper>
     </>
